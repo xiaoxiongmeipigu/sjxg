@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjhj.sjxg.activity.item.ItemDetailActivity">
+
+    <include
+        layout="@layout/lay_header"
+        />
+
+    <com.lzy.widget.VerticalSlide
+        android:id="@+id/verticalSlide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@id/lay_header">
+
+        <FrameLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.lzy.widget.VerticalSlide>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="66dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_arrow_upward"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height_50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/purcase"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="加入购物车"
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/shop_white"
+            android:background="@color/light_orange"
+            android:gravity="center"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="立即订购"
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/shop_white"
+            android:background="@color/shop_red"
+            android:gravity="center"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"
+        android:visibility="gone"
+        />
+
+    <com.zjhj.sjxg.view.SizeColorLayout
+        android:id="@+id/sizeColorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:clickable="true"
+        />
+
+</RelativeLayout>

@@ -37,7 +37,7 @@ public class SMSUtils {
     }
 
     public static void requestCode(Activity activity,String scene,String phone,String img_code){
-       /* UserApi.getverify(activity, scene,phone,img_code, new RequestCallback<JSONObject>() {
+        UserApi.getverify(activity, scene,phone,img_code, new RequestCallback<JSONObject>() {
             @Override
             public void success(JSONObject success) {
                 String mark = success.getString("msg");
@@ -50,7 +50,7 @@ public class SMSUtils {
                 eventHandler.afterEvent(EVENT_GET_VERIFICATION_CODE_ERROR,
                         RESULT_ERROR,message);
             }
-        });*/
+        });
     }
 
    /* public static void requestForgerCode(Activity activity,String phone){

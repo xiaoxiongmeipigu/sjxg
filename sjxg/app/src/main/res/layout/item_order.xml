@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view"
+    android:background="@color/shop_white"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下单时间："
+                android:textColor="@color/shop_black"
+                android:textSize="@dimen/text_normal"
+                android:layout_marginLeft="@dimen/margin_2"
+                />
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/shop_black"
+                android:textSize="@dimen/text_normal"
+                android:text=""
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_1"
+            android:layout_marginRight="@dimen/margin_2"
+            android:text=""
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/shop_red"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_line"
+        />
+
+    <LinearLayout
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="90dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            fresco:fadeDuration="2000"
+            fresco:placeholderImage="@mipmap/img_small_default"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="2000"
+            fresco:progressBarImage="@drawable/progress"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:actualImageScaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/shop_black"
+            android:lineSpacingMultiplier="1.2"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/background_gray"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/attr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/shop_black"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥:"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/shop_red"
+                        />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/text_big_xx"
+                        android:textColor="@color/shop_red"
+                        android:layout_marginLeft="7dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_big_x"
+                android:textColor="@color/shop_black"
+                android:text=""
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shop_white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/goods_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/light_gray"
+                />
+
+            <TextView
+                android:id="@+id/discount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/shop_black"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/all_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/shop_black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_line"
+            />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:paddingTop="@dimen/margin_1"
+            android:paddingBottom="@dimen/margin_1"
+            android:paddingRight="@dimen/margin_10dp"
+            >
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/shop_black"
+                android:textSize="@dimen/text_big"
+                android:background="@drawable/rect_solid_color_white_stroke_divider_round_5"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/comfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认收货"
+                android:textColor="@color/shop_red"
+                android:textSize="@dimen/text_big"
+                android:background="@drawable/rect_solid_color_white_stroke_red_round_5"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

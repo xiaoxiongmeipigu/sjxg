@@ -9,8 +9,8 @@ import java.io.Serializable;
  */
 public class DistrictModel implements Serializable {
 
-	private String region_id;
-	private String region_name;
+	private String id;
+	private String name;
 	
 	public DistrictModel() {
 		super();
@@ -18,29 +18,29 @@ public class DistrictModel implements Serializable {
 
 	public DistrictModel(String region_name, String region_id) {
 		super();
-		this.region_name = region_name;
-		this.region_id = region_id;
+		this.name = region_name;
+		this.id = region_id;
 	}
 
-	public String getRegion_name() {
-		return region_name;
+	public String getId() {
+		return id;
 	}
 
-	public void setRegion_name(String region_name) {
-		this.region_name = region_name;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public String getRegion_id() {
-		return region_id;
+	public String getName() {
+		return name;
 	}
 
-	public void setRegion_id(String region_id) {
-		this.region_id = region_id;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return "DistrictModel [region_name=" + region_name + ", region_id=" + region_id + "]";
+		return "DistrictModel [region_name=" + name + ", region_id=" + id + "]";
 	}
 
 }

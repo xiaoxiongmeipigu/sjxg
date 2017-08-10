@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjhj.sjxg.fragment.ItemMenuFrag">
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/bottom_layout"
+       android:layout_marginLeft="@dimen/margin_2"
+       android:layout_marginRight="@dimen/margin_2"
+       ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height_50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="重置"
+            android:textColor="@color/shop_white"
+            android:textSize="@dimen/text_big_x"
+            android:background="@color/shop_yellow"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/complete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="完成"
+            android:textColor="@color/shop_white"
+            android:textSize="@dimen/text_big_x"
+            android:background="@color/shop_red"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

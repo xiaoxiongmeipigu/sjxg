@@ -10,9 +10,9 @@ import java.util.List;
  *
  */
 public class CityModel implements Serializable {
-	private String region_id;
-	private String region_name;
-	private List<DistrictModel> area_list = new ArrayList<DistrictModel>();
+	private String id;
+	private String name;
+	private List<DistrictModel> children = new ArrayList<DistrictModel>();
 	
 	public CityModel() {
 		super();
@@ -20,37 +20,37 @@ public class CityModel implements Serializable {
 
 	public CityModel(String region_name, List<DistrictModel> area_list) {
 		super();
-		this.region_name = region_name;
-		this.area_list = area_list;
+		this.name = region_name;
+		this.children = area_list;
 	}
 
-	public String getRegion_name() {
-		return region_name;
+	public List<DistrictModel> getChildren() {
+		return children;
 	}
 
-	public void setRegion_name(String region_name) {
-		this.region_name = region_name;
+	public void setChildren(List<DistrictModel> children) {
+		this.children = children;
 	}
 
-	public String getRegion_id() {
-		return region_id;
+	public String getId() {
+		return id;
 	}
 
-	public void setRegion_id(String region_id) {
-		this.region_id = region_id;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public List<DistrictModel> getArea_list() {
-		return area_list;
+	public String getName() {
+		return name;
 	}
 
-	public void setArea_list(List<DistrictModel> area_list) {
-		this.area_list = area_list;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return "CityModel [region_name=" + region_name + ", districtList=" + area_list
+		return "CityModel [region_name=" + name + ", districtList=" + children
 				+ "]";
 	}
 	

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zjhj.sjxg.activity.shop.ShopListActivity"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+
+    <include
+        layout="@layout/lay_header"
+        />
+
+    <LinearLayout
+        android:id="@+id/addr_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingBottom="@dimen/margin_2"
+        android:gravity="center_vertical"
+        android:background="@color/shop_white"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/addr_logo"
+            />
+
+        <TextView
+            android:id="@+id/addr_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/shop_black"
+            android:textSize="@dimen/text_big"
+            android:text=""
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right_black"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height_50dp"
+        app:tabIndicatorColor="@color/shop_red"
+        app:tabSelectedTextColor="@color/shop_black"
+        app:tabTextColor="@color/light_black"
+        app:tabIndicatorHeight="1dp"
+        app:tabTextAppearance="@style/TabLayoutTextAppearance_size_big"
+        android:background="@color/shop_white"
+        android:layout_marginTop="@dimen/margin_10dp"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_line"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

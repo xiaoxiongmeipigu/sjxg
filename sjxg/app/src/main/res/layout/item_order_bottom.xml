@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/shop_white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/goods_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/light_gray"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计：¥ "
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/shop_black"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_big_x"
+            android:textColor="@color/shop_black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/express_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(包含运费 ¥ 0)"
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/light_gray"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        android:paddingTop="@dimen/margin_1"
+        android:paddingBottom="@dimen/margin_1"
+        >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/shop_black"
+            android:textSize="@dimen/text_big"
+            android:background="@drawable/rect_solid_color_white_stroke_divider_round_5"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/comfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认收货"
+            android:textColor="@color/shop_red"
+            android:textSize="@dimen/text_big"
+            android:background="@drawable/rect_solid_color_white_stroke_red_round_5"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="@dimen/margin_2"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

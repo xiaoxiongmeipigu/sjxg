@@ -18,6 +18,7 @@ public class UserSP extends AbstractSP {
     private final static String KEY_SP_Resources = "sjxg.resources";
     private final static String KEY_SP_Alias = "sjxg_user_Alias";
     private final static String KEY_SP_CITY_JSON = "sjxg.cityjson";
+    private final static String KEY_SP_Addr = "sjxg_com_addr";
 
     public UserSP(Context context) {
         super(context);
@@ -82,13 +83,13 @@ public class UserSP extends AbstractSP {
     }
 
     public boolean checkLogin() {
-        return getUserBean() != null && !TextUtils.isEmpty(getUserBean().getGuide_id());
+        return getUserBean() != null && !TextUtils.isEmpty(getUserBean().getId());
     }
 
     public void clearUserData() {
         sharedPreferences.edit().remove(KEY_SP_USER).commit();
         sharedPreferences.edit().remove(KEY_SP_Alias).commit();
-//        sharedPreferences.edit().remove(KEY_SP_ADDR).commit();
+        sharedPreferences.edit().remove(KEY_SP_ADDR).commit();
 
     }
 
@@ -112,6 +113,15 @@ public class UserSP extends AbstractSP {
             return null;
         }
         return code;
+    }
+
+    public void setAddr(String json){
+        sharedPreferences.edit().putString(KEY_SP_Addr, json).commit();
+
+    }
+
+    public String getAddr(){
+        return sharedPreferences.getString(KEY_SP_Addr,"");
     }
 
 }

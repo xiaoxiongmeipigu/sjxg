@@ -113,9 +113,9 @@ public class MapiUtil {
 
         if(null!=userSP.getUserBean()){
             params.put(Constants.Token, TextUtils.isEmpty(userSP.getUserBean().getToken())?"":userSP.getUserBean().getToken());
-            params.put(Constants.Uid, TextUtils.isEmpty(userSP.getUserBean().getGuide_id())?"":userSP.getUserBean().getGuide_id());
+            params.put(Constants.Uid, TextUtils.isEmpty(userSP.getUserBean().getId())?"":userSP.getUserBean().getId());
             DebugLog.i("token=>"+userSP.getUserBean().getToken());
-            DebugLog.i("userSP.getUserBean().getUid()=>"+userSP.getUserBean().getGuide_id());
+            DebugLog.i("userSP.getUserBean().getUid()=>"+userSP.getUserBean().getId());
         }
         if (params != null)
             DebugLog.i("params=" + params.toString());

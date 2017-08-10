@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -39,8 +40,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.4.0'
     compile 'com.bigkoo:pickerview:2.1.0'
     compile 'com.yalantis:ucrop:1.0.1'
-    compile files('libs/AMap3DMap_5.1.0_AMapNavi_5.1.0_20170518.jar')
-    compile files('libs/AMap_Location_V3.4.0_20170427.jar')
     compile files('libs/fastjson-1.2.7.jar')
     compile files('libs/gesture-imageview.jar')
     compile files('libs/gson-2.2.4.jar')
@@ -58,4 +57,8 @@ dependencies {
     compile files('libs/ShareSDK-Wechat-Moments-3.0.0.jar')
     compile files('libs/universal-image-loader-1.9.4.jar')
     compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/zxing.jar')
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.amap.api:search:latest.integration'
+    compile 'com.amap.api:3dmap:latest.integration'
 }

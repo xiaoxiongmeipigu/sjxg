@@ -11,5 +11,5 @@ public class Constants {
 //    public static final String Token = "Token";
 //    public static final String Token_VALUE = MD5.md5("ANT"+DateUtil.getInstance().date2YMD_N(new Date())+",yg,");
     public static final String Token = "token";
-    public static final String Uid = "uid";
+    public static final String Uid = "id";
 }

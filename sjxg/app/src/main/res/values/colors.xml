@@ -3,4 +3,35 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="shop_blue">#1ea1f3</color>
+    <color name="shop_red">#ff4544</color>
+    <color name="shop_green">#22ac38</color>
+    <color name="dark_red">#f24141</color>
+    <color name="shop_orange">#f2584a</color>
+    <color name="dark_orange">#db6003</color>
+    <color name="light_orange">#fea700</color>
+    <color name="light_dark_orange">#d97806</color>
+    <color name="shop_black">#333333</color>
+    <color name="shop_white">#ffffff</color>
+    <color name="shop_transparent">#00000000</color>
+    <color name="background_all">#ffffff</color>
+    <color name="light_black">#666666</color>
+    <color name="light_gray">#999999</color>
+    <color name="light_white">#80ffffff</color>
+    <color name="background_gray">#f7f7f7</color>
+    <color name="divider_line">#cccccc</color>
+    <color name="dark_gray">#666666</color>
+    <color name="dark_blue">#1b90d9</color>
+    <color name="gray_middle">#bdbdbd</color>
+    <color name="text_blue">#daf3ff</color>
+    <color name="shop_yellow">#f39800</color>
+    <color name="dark_yellow">#de8a00</color>
+    <color name="shadow">#f7f7f7</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="scan_bg">#7f000000</color>
+
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="background_gray">#f7f7f7</drawable>
+
 </resources>

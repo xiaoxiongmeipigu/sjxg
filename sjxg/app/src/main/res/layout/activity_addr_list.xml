@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjhj.sjxg.activity.addr.AddrListActivity"
+    android:background="@color/background_gray"
+    >
+
+    <include
+        layout="@layout/lay_header"
+        />
+
+
+    <com.zjhj.sjxg.widget.BestSwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_header"
+        android:layout_above="@+id/bottom_layout"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </com.zjhj.sjxg.widget.BestSwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height_50dp"
+        android:text="添加新地址"
+        android:textSize="@dimen/text_big_x"
+        android:textColor="@color/shop_white"
+        android:background="@color/shop_red"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

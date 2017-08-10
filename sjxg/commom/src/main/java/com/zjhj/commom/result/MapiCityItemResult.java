@@ -11,6 +11,24 @@ public class MapiCityItemResult extends MapiBaseResult{
     private String province_name;
     private String longitude;
     private String latitude;
+    private String address;
+    private String mobile;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
 
     public String getLongitude() {
         return longitude;
